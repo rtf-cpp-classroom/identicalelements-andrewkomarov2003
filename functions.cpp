@@ -1,10 +1,19 @@
 #include "functions.h"
-
+#include <iostream>
+#include <string>
 
 int findSameElements(int* Arr1, int size1, int* Arr2, int size2) 
 {
 
-	int k = 0;
+	if (Arr1 == NULL || Arr2 == NULL) {
+        cout << "Wrong array data!" << endl;
+    }
+    else if (size1 < 2 || size2 < 2) {
+        cout << "Wrong array size!" << endl;
+    }
+    else {
+
+        int k = 0;
         int m = 0;
         int n = 0;
         int p = 0;
@@ -83,10 +92,20 @@ int findSameElements(int* Arr1, int size1, int* Arr2, int size2)
                 } 
             }          
         }
-	
-	
-	delete[] Arr_comp;
+
+        for (int i = 0; i < m; i++) {
+            if (Arr_count[i] != 0) {
+                p++;
+            }
+        }
+
+        for (int i = 0; i < p; i++) {
+            cout << Arr_comp[i] << " - " << Arr_count[i] << endl;
+        }
+
+        delete[] Arr_comp;
         delete[] Arr_count;
+    }
     return 0;
 	
 

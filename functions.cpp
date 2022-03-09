@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int findSameElements(int* Arr1, int size1, int* Arr2, int size2) 
+void findSameElements(int* Arr1, int size1, int* Arr2, int size2) 
 {
 
 	if (Arr1 == NULL || Arr2 == NULL) {
@@ -108,7 +108,7 @@ int findSameElements(int* Arr1, int size1, int* Arr2, int size2)
         delete[] Arr_comp;
         delete[] Arr_count;
     }
-    return 0;
+    //return 0;
 	
 
 }

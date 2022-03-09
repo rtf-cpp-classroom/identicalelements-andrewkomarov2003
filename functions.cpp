@@ -2,6 +2,8 @@
 #include <iostream>
 #include <string>
 
+using namespace std;
+
 int findSameElements(int* Arr1, int size1, int* Arr2, int size2) 
 {
 

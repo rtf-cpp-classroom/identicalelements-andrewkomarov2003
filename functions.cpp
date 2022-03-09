@@ -8,7 +8,7 @@ void findSameElements(int* Arr1, int size1, int* Arr2, int size2)
 {
 
 	if (Arr1 == NULL || Arr2 == NULL) {
-        cout << "Wrong array data!" << endl;
+        cout << "Wrong array data" << endl;
     }
     else if (size1 < 2 || size2 < 2) {
         cout << "Wrong array size!" << endl;

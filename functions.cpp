@@ -1,7 +1,7 @@
 #include "functions.h"
 
 
-void findSameElements(int* Arr1, int size1, int* Arr2, int size2) 
+int findSameElements(int* Arr1, int size1, int* Arr2, int size2) 
 {
 
 	int k = 0;
